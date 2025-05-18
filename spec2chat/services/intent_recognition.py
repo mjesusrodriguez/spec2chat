@@ -3,7 +3,7 @@ spec2chat - A Python library for building task-oriented conversational systems f
 
 Author: M. Jesús Rodríguez
 License: Apache 2.0 License
-Version: 0.1.4
+Version: 0.1.6
 Repository: https://github.com/mjesusrodriguez/spec2chat
 Created on 17/05/2025 by M. Jesús Rodríguez
 """
