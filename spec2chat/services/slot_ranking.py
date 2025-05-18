@@ -1,3 +1,13 @@
+"""
+spec2chat - A Python library for building task-oriented conversational systems from OpenAPI service specifications.
+
+Author: M. Jesús Rodríguez
+License: Apache 2.0 License
+Version: 0.1.4
+Repository: https://github.com/mjesusrodriguez/spec2chat
+Created on 17/05/2025 by M. Jesús Rodríguez
+"""
+
 from spec2chat.db.mongo import MongoDB
 from itertools import chain
 import spacy

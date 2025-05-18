@@ -1,3 +1,13 @@
+"""
+spec2chat - A Python library for building task-oriented conversational systems from OpenAPI service specifications.
+
+Author: M. Jesús Rodríguez
+License: Apache 2.0 License
+Version: 0.1.4
+Repository: https://github.com/mjesusrodriguez/spec2chat
+Created on 17/05/2025 by M. Jesús Rodríguez
+"""
+
 import openai
 from spec2chat.utils.openai_config import configure_openai
 
@@ -22,7 +32,8 @@ def classify_domain(input):
     )
 
     # Extraer la respuesta generada por el modelo
-    generated_text = response.choices[0].message.content
+
+
     # Dividir la cadena por comas y quitar espacios innecesarios
     final_response = [domain.strip() for domain in generated_text.split(',')]
     print(f"Final response (as list): {final_response}")
