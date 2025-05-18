@@ -22,7 +22,6 @@ Thumbs.db
 
 # Environments and secrets
 .env
-.env.*
 *.env
 
 # PyPI distributions
@@ -41,7 +40,4 @@ dump/
 
 # Model and data files
 nltk_data/
-spacy_data/
-
-# VSCode settings
-.vscode/
+spacy_data/library_test.py

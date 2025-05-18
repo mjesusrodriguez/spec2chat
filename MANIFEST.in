@@ -1,4 +1,4 @@
 include README.md
 include .env.example
 recursive-include data *
-recursive-include examples *
+include spec2chat/examples/run_restaurant_example.py

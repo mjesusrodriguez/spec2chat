@@ -255,7 +255,7 @@ spec2chat/
 See a full usage example in:
 
 ```bash
-examples/basic_usage.py
+spec2chat/examples/run_restaurant_example.py
 ```
 
 ---
@@ -271,7 +271,3 @@ Lecture Notes in Computer Science, vol 15404. Springer, Singapore.
 📎 https://doi.org/10.1007/978-981-96-0805-8_13
 
 ---
-
-## License
-
-This project is released under the MIT License.

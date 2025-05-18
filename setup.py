@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="spec2chat",
-    version="0.1.4",
+    version="0.1.5",
     author="María Jesús Rodríguez Sánchez",
     author_email="mjesusrodriguez@ugr.es",
     description="A Python library for generating task-oriented dialogue systems from service specifications (PPTalk).",
