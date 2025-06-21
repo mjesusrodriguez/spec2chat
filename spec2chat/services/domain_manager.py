@@ -11,9 +11,9 @@ Created on 17/05/2025 by M. Jesús Rodríguez
 import openai
 from spec2chat.utils.openai_config import configure_openai
 
-configure_openai()
-
 def classify_domain(input):
+    configure_openai()
+
     messages = [
         {
             "role": "user",
