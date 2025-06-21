@@ -11,9 +11,8 @@ Created on 17/05/2025 by M. Jesús Rodríguez
 import openai
 from spec2chat.utils.openai_config import configure_openai
 
-configure_openai()
-
 def improve_question(question: str, domain: str) -> str:
+    configure_openai()
     """Reformula una pregunta para que sea más natural, educada y conversacional, manteniendo la intención."""
 
     messages = [

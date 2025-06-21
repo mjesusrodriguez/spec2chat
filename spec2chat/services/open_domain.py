@@ -10,13 +10,13 @@ Created on 17/05/2025 by M. Jesús Rodríguez
 import openai
 from spec2chat.utils.openai_config import configure_openai
 
-configure_openai()
-
 def open_domain_conversation(user_input: str, dialogue_history: list = None) -> str:
     """
     Responde a una entrada de usuario en una conversación de dominio abierto.
     Usa el historial de diálogo si se proporciona.
     """
+
+    configure_openai()
 
     dialogue_history_str = (
         "\n".join([f"User: {entry['user']}\nChatbot: {entry['chatbot']}" for entry in dialogue_history])

@@ -11,9 +11,8 @@ Created on 17/05/2025 by M. Jesús Rodríguez
 import openai
 from spec2chat.utils.openai_config import configure_openai
 
-configure_openai()
-
 def generate_question_for_slot(slot: str, domain: str) -> str:
+    configure_openai()
     """Genera una pregunta coloquial para un slot específico en un dominio, sin saludo inicial."""
 
     messages = [

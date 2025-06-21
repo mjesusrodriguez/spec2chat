@@ -13,7 +13,6 @@ import json
 import openai
 from spec2chat.utils.openai_config import configure_openai
 
-configure_openai()
 db = MongoDB()
 
 def getIntents(domain):
@@ -32,6 +31,7 @@ def getIntents(domain):
     return intents_list
 
 def recognize_intent(input, domain):
+    configure_openai()
     intent_array = getIntents(domain)
     # Convertir el vector a una cadena de caracteres con comas
     intents = ','.join(map(str, intent_array))

@@ -15,7 +15,6 @@ from bson import ObjectId
 from spec2chat.db.mongo import MongoDB
 from spec2chat.utils.openai_config import configure_openai
 
-configure_openai()
 db = MongoDB()
 
 def extract_schema_properties(schema):
@@ -104,6 +103,8 @@ def extract_slots(intent, service_id, domain):
     return slots
 
 def slot_filling(userInput, slots, userAnswers = None):
+    configure_openai()
+
     # Convertir la lista de slots a una cadena JSON
     slots_str = json.dumps(slots)
 

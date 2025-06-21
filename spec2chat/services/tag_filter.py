@@ -17,7 +17,6 @@ from spec2chat.utils.openai_config import configure_openai
 from .service_selection import select_service_by_intent, service_selection
 from itertools import chain
 
-configure_openai()
 db = MongoDB()
 
 try:
@@ -85,6 +84,7 @@ def extract_tags(text):
     return list(set(raw_tags + synonyms))
 
 def generate_tag_question(tag, domain):
+    configure_openai()
 
     messages = [{
         "role": "user",

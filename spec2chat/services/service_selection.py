@@ -12,9 +12,6 @@ from bson import ObjectId
 import random
 
 from spec2chat.db.mongo import MongoDB
-from spec2chat.utils.openai_config import configure_openai
-
-configure_openai()
 
 # Obtener la base de datos
 db = MongoDB()
