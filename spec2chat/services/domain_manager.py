@@ -32,8 +32,7 @@ def classify_domain(input):
     )
 
     # Extraer la respuesta generada por el modelo
-
-
+    generated_text = response.choices[0].message.content
     # Dividir la cadena por comas y quitar espacios innecesarios
     final_response = [domain.strip() for domain in generated_text.split(',')]
     print(f"Final response (as list): {final_response}")
