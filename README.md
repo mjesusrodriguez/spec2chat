@@ -262,11 +262,11 @@ This repository includes several complete usage examples of the `spec2chat` libr
 
 - 🧑‍🍳 **Restaurant reservation example**
   - examples/run_restaurant_example.py
-  - Google Colab notebook: https://colab.research.google.com/your-restaurant-notebook-url
+  - Google Colab notebook: https://colab.research.google.com/drive/15xPmQ6CzkZe3-rLEp52qHLfRQHZACrxv
 
 - 🏨 **Hotel booking example**
   - Python script: examples/run_hotel_example.py
-  - Google Colab notebook: https://colab.research.google.com/your-hotel-notebook-url
+  - Google Colab notebook: https://colab.research.google.com/drive/1c5_PjkPI3H7BMOMIc0Qf61D3_yAoYZl2
 
 - 💬 **Interactive web client using Flask**
   - Flask client: examples/flask-client
