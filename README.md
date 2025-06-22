@@ -252,11 +252,18 @@ spec2chat/
 
 ## Examples
 
-See a full usage example in:
+This repository includes several complete usage examples of the `spec2chat` library:
 
-```bash
-spec2chat/examples/run_restaurant_example.py
-```
+- 🧑‍🍳 **Restaurant reservation example**
+  - examples/run_restaurant_example.py
+  - Google Colab notebook: https://colab.research.google.com/your-restaurant-notebook-url
+
+- 🏨 **Hotel booking example**
+  - Python script: examples/run_hotel_example.py
+  - Google Colab notebook: https://colab.research.google.com/your-hotel-notebook-url
+
+- 💬 **Interactive web client using Flask**
+  - Flask client: examples/flask-client
 
 ---
 
