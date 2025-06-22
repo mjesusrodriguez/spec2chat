@@ -227,19 +227,25 @@ spec2chat/
 │   ├── hotels.intents.json
 │   └── hotels.slot_ranking.json
 ├── examples/
-│   └── basic_usage.py
+│   ├── run_restaurant_example.py
+│   ├── run_hotel_example.py
+│   └── flask-client/
+│       ├── app.py
+│       └── static/
+│           └── ...
 ├── scripts/
 │   └── load_example_data.py
 ├── services/
-│   ├── domain.py
-│   ├── intent.py
+│   ├── domain_manager.py
+│   ├── intent_recognition.py
 │   ├── slot_filling.py
 │   ├── service_selection.py
 │   ├── tag_filter.py
-│   ├── discriminative_parameters.py
+│   ├── slot_ranking.py
 │   ├── open_domain.py
 │   ├── question_generation.py
 │   └── question_improvement.py
+│   └── question_retrieval.py
 ├── utils/
 │   └── openai_config.py
 ├── .env.example
