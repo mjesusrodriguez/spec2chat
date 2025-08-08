@@ -11,7 +11,7 @@ Created on 17/05/2025 by M. Jesús Rodríguez
 import openai
 from spec2chat.utils.openai_config import configure_openai
 
-def improve_question(question: str, domain: str) -> str:
+def improve_question(slot: str, question: str, domain: str) -> str:
     configure_openai()
     """Reformula una pregunta para que sea más natural, educada y conversacional, manteniendo la intención."""
 
@@ -21,6 +21,7 @@ def improve_question(question: str, domain: str) -> str:
             "content": (
                 f"Given the original question: '{question}' in the context of the '{domain}' domain, "
                 f"rephrase this question into a more conversational, polite, and natural tone. "
+                f"The question is intended to ask about the '{slot}' slot. "
                 f"Ensure the new question still elicits the same specific information from the customer. "
                 f"Provide only one alternative question that maintains clarity and fits the domain’s context."
             )

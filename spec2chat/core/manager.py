@@ -69,8 +69,8 @@ def disambiguate_services(tag_services: dict, user_input: str, slots: dict, inte
 def generate_question(slot: str, domain: str) -> str:
     return generate_question_for_slot(slot, domain)
 
-def improve_slot_question(question: str, domain: str) -> str:
-    return improve_question(question, domain)
+def improve_slot_question(slot: str, question: str, domain: str) -> str:
+    return improve_question(slot, question, domain)
 
 def extract_filled_slots(user_input: str, slots: list, user_answers=None) -> dict:
     filled = slot_filling(user_input, slots, user_answers)

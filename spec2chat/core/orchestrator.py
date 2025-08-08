@@ -155,7 +155,7 @@ def complete_slot_filling(user_input, user_answers, filledslots, reqslots, servi
 
     for param in emptyParams:
         if param in service_questions:
-            improved = improve_slot_question(service_questions[param], domain)
+            improved = improve_slot_question(param, service_questions[param], domain)
             if improved:
                 questions[param] = improved
 
