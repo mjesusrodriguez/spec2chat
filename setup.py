@@ -11,7 +11,7 @@ from setuptools import setup, find_packages
 import re
 
 def get_version():
-    with open("version.py", "r") as f:
+    with open("spec2chat/version.py", "r") as f:
         content = f.read()
     match = re.search(r'__version__\s*=\s*"(.+)"', content)
     if match:
@@ -24,7 +24,7 @@ setup(
     author="María Jesús Rodríguez Sánchez",
     author_email="mjesusrodriguez@ugr.es",
     description="A Python library for generating task-oriented dialogue systems from service specifications (PPTalk).",
-    long_description=open("../README.md", encoding="utf-8").read(),
+    long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/mjesusrodriguez/spec2chat",  # Replace with your real GitHub URL
     packages=find_packages(),
